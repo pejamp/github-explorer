@@ -1,0 +1,29 @@
+li {
+  border: 1px solid #8257e6;
+  border-radius: 1rem;
+  padding: 1rem;
+
+  & + li {
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #616161;
+    margin-top: 8px;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8257e6;
+  }
+
+  transition: border 0.1s;
+
+  &:hover {
+    border: 2px solid #8257e6;
+  }
+}
