@@ -1,5 +1,5 @@
 li {
-  border: 1px solid #8257e6;
+  border: 1px solid var(--purple-800);
   border-radius: 1rem;
   padding: 1rem;
 
@@ -7,9 +7,13 @@ li {
     margin-top: 20px;
   }
 
+  strong {
+    font-size: 20px;
+  }
+
   p {
     font-size: 14px;
-    color: #616161;
+    color: var(--gray-500);
     margin-top: 8px;
   }
 
@@ -18,12 +22,18 @@ li {
     margin-top: 16px;
     text-decoration: none;
     font-weight: bold;
-    color: #8257e6;
+    color: var(--purple-800);
+
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
   }
 
-  transition: border 0.1s;
+  transition: border 0.2s;
 
   &:hover {
-    border: 2px solid #8257e6;
+    border: 2px solid var(--green-500);
   }
 }

@@ -1,8 +1,44 @@
+body {
+  background: #141414;
+  color: var(--gray-50);
+}
+
 section.repository-list {
-  margin: 40px;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 780px;
+
+  .profile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+
+    border-left: 4px solid var(--purple-800);
+    border-radius: 1rem;
+    background: #212121;
+
+    img {
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid var(--green-500);
+    }
+
+    .name-login {
+      span {
+        color: var(--gray-200);
+      }
+    }
+  }
 
   h1 {
-    margin-bottom: 16px;
+    margin-bottom: 1.5rem;
+    color: var(--purple-800);
   }
 
   ul {

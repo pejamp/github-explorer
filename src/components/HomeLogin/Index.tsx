@@ -1,13 +1,18 @@
 import { FormEvent, useState } from "react";
-import api from "../../services/api";
+import { useHistory } from "react-router-dom";
 
 import './styles.scss';
 
 export function HomeLogin() {
+  const history = useHistory();
   const [username, setUsername] = useState("");
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+
+    const pathUser = `/repositories/${username}`;
+
+    history.push(pathUser);
   }
 
   return (
