@@ -12,8 +12,8 @@ It's a web application where you can see your repositories just typing your gith
 ## Screenshots
 
 <h1 align="center">
-    <img alt="GithubExplorer" src="images/githubHome.png" />
-    <img alt="GithubExplorer" src="images/githubRepo.png" />
+    <img alt="GithubExplorer" src="public/images/githubHome.png" />
+    <img alt="GithubExplorer" src="public/images/githubRepo.png" />
 </h1>
 
 ## Acknowledgements
